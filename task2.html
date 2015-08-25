@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="task2">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <a href="src/bootstrap-theme.css"></a>
+    <a href="src/bootstrap.css"></a>
+</head>
+<body ng-controller="secondctrl">
+<div>
+    <!--<select>-->
+        <!--<option ng-repeat="op in score" value="op.group" ng-model="op.group">{{op.group}}</option>-->
+    <!--</select>-->
+    <select ng-model="first" ng-options="o.group for o in score"></select>
+    <select ng-model="second" ng-options="s.name for s in first.info" ng-change="selectchange()"></select>
+    <input type="text" ng-model="x" disabled/>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="src/angular.min.js"></script>
+<script src="src/ui-bootstrap-tpls-0.13.3.min.js"></script>
+<script src="task2.js"></script>
+</body>
+</html>

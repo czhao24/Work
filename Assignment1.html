@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="task1">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <a href="src/bootstrap-theme.css"></a>
+    <a href="src/bootstrap.css"></a>
+</head>
+<body ng-controller="firstctrl">
+<input type="text" ng-model="email"/>
+<button ng-click="submit(email)">Enter</button>
+<div>
+    <li ng-repeat="email in emails">{{email}}</li>
+    <li>peson1@email.com</li>
+    <li>person2@email.com</li>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="src/angular.min.js"></script>
+<script src="src/ui-bootstrap-tpls-0.13.3.min.js"></script>
+<script src="taks1.js"></script>
+</body>
+</html>
